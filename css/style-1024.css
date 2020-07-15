@@ -1,0 +1,231 @@
+@media only screen and (max-width: 1024px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    img{
+        background-color: transparent;
+    }
+    .main{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(to right,#9c27b0,#8cedff);
+    }
+    nav{
+        width: 80%;
+        position: sticky;
+        margin: 20px auto;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        flex-basis: 20%;
+    }
+    .logo img{
+        width: 200px;
+    }
+    .nav-link {
+        flex: 1;
+        text-align: right;
+    }
+    .nav-link ul li{
+        list-style: none;
+        display: inline-block;
+        margin:  0 20px;
+    }
+    .nav-link ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .information{
+        width: 1000px;
+        height: 1000px;
+        position: absolute;
+        top: 50%;
+        left: -10% ;
+        transform:  translateY(-50%);
+       
+    }
+    #circle{
+        width: 1000px;
+        height: 1000px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        /* background: #ccc; */
+        transform: rotate(0deg);   
+        transition: 1s;
+    }
+    .feature img{
+        width: 70px;
+        height: 70px;
+        color: #fff;
+    }
+    .feature{
+        position: absolute;
+        display: flex;
+        color: #fff;
+    }
+    .feature div{
+        margin-left: 30px;
+    }
+    .feature div p{
+        margin-top: 8px;
+    }
+    .one{
+        top: 435px;
+        right: -85px;
+    }
+    
+    .two{
+        top: 55px;
+        left: 215px;
+        
+        transform: rotate(-90deg);
+    }
+    .three{
+        bottom: 420px;
+        left: -80px;
+        transform: rotate(-180deg);
+    }
+    .four{
+        bottom: 135px;
+        right: 375px;
+     transform: rotate(-270deg);
+    }
+    .mybar-java{
+      width: 90%;
+      margin-top: 2px ;
+      height: 5px;
+      background-color: #fff;
+    }
+    .mybar-font{
+        width: 120%;
+        margin-top: 2px ;
+        height: 5px;
+        background-color: #fff;
+      }
+      .mybar-sql{
+        width: 100%;
+        margin-top: 2px ;
+        height: 5px;
+        background-color: #fff;
+      }
+      .anh{
+        width: 300px;
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        transform: translateY(-50%);
+        z-index: 1;
+        border-radius: 55px;
+         
+      }
+      .name{
+        
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        transform: translateY(-50%);
+        z-index: 1;
+        border-radius: 55px;
+        font-size: 200%;
+        font-family: -webkit-body;
+        font-weight: bolder;
+    }
+      
+      .controls{
+          position: absolute;
+          right: 10%;
+          top: 50%;
+          transform: translateY(-50%);
+          text-align: center;
+      }
+      .controls h3{
+          margin: 15px 0;
+          color: #fff;
+      }
+      #upBtn{
+          width: 30px;
+          cursor: pointer;
+    
+      }
+      #downBtn{
+        width: 30px;
+        cursor: pointer;
+        transform: rotate(180deg);
+    }
+    .overlay{
+        width: 0;
+        height: 0;
+        border-top: 500px solid #fff;
+        border-right: 500px solid transparent;
+        border-bottom: 500px solid #fff;
+        border-left:  500px solid #fff;
+        left: 0;
+        top:0;
+    }
+    .anh:hover{
+        width: 500px;
+        background:#9c27b0 ;
+    }
+     #phone span {
+        display: none;
+        position: absolute;
+        top: 10%;
+        /* right: 79%; */
+        /* left: -211%; */
+        color: black;
+        width: 37px;
+        font-size: xx-small;
+    }
+    #phone{
+        position: relative;   
+    }
+    #phone:hover span{
+        /* transition: all 2s ease-in-out; */
+        display: block  ;
+    }
+    #location{
+        position: relative;
+    
+    }
+    #location:hover span{
+        /* transition: all 2s ease-in-out; */
+        display: block  ;
+    }
+    #location span {
+        left: auto;
+        display: none;
+        position: absolute;
+        /* top: 100%; */
+        /* bottom: 10%; */
+        /* right: 100%; */
+        /* bottom: -31%; */
+        /* left: -317%; */
+        font-size: x-small;
+        color: black;
+    }
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 65%;
+        width: 100%;
+    }
+    .mapouter {
+        display: none;
+        position: absolute;
+        /* text-align: right; */
+        /* height: 279px; */
+        width: 50%;
+        right: 1%;
+        top: 52%;
+        /* bottom: 0%; */
+    }
+    
+}

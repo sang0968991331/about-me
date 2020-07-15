@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<!-- //https://www.iconsdb.com/white-icons/?search=profile -->
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="image/logo2.png">
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <!-- <li>
+                        <p id="menu" onmousemove="Myfunction()" onmouseout="clearCoor()">Liên hệ</p>
+                    </li> -->
+                    <li><a href="LE-BA-SANG-TopCV.vn-060720.154847.pdf" download>Tải PDF</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="menu">
+            <ul>
+                <li>
+                    <img id="menu-info" src="image/infos.png"  onmousemove="Myfunction()" onmouseout="clearCoor()">
+                    <span>Thông tin</span>
+                </li>
+                <li>
+                    <img src="image/hocvan.png">
+                    <span>Học vấn</span>
+                </li>
+                <li>
+                    <img src="image/kinhnghiem.png">
+                    <span>Kinh nghiệm</span>
+                </li>
+                <li>
+                    <img src="image/kynang.png">
+                    <span>Kỹ năng</span>
+                </li>
+            </ul>
+        </div>
+        <div class="profile" id="profile">
+            <div class="info">
+                <h2>Thông tin</h2>
+                <img src="image/anh.jpg">
+                <div>
+                    <span>Họ tên:</span>
+                    <h4>Lê Bá Sáng</h4>
+                    <span>Ngày sinh : </span>
+                    <h4>21-01-1997</h4>
+                    <span>Quê quán : </span>
+                    <h4>Triệu Thành - Triệu Phong - Quảng Trị</h4>
+                </div>
+
+            </div>
+            <div class="info">
+                <h2>Thông tin</h2>
+                <img src="image/anh.jpg">
+                <div>
+                    <span>Họ tên:</span>
+                    <h4>Lê Bá Sáng</h4>
+                    <span>Ngày sinh : </span>
+                    <h4>21-01-1997</h4>
+                    <span>Quê quán : </span>
+                    <h4>Triệu Thành - Triệu Phong - Quảng Trị</h4>
+                </div>
+
+            </div>
+            <div class="info">
+                <h2>Thông tin</h2>
+                <img src="image/anh.jpg">
+                <div>
+                    <span>Họ tên:</span>
+                    <h4>Lê Bá Sáng</h4>
+                    <span>Ngày sinh : </span>
+                    <h4>21-01-1997</h4>
+                    <span>Quê quán : </span>
+                    <h4>Triệu Thành - Triệu Phong - Quảng Trị</h4>
+                </div>
+
+            </div>
+            <div class="info">
+                <h2>Thông tin</h2>
+                <img src="image/anh.jpg">
+                <div>
+                    <span>Họ tên:</span>
+                    <h4>Lê Bá Sáng</h4>
+                    <span>Ngày sinh : </span>
+                    <h4>21-01-1997</h4>
+                    <span>Quê quán : </span>
+                    <h4>Triệu Thành - Triệu Phong - Quảng Trị</h4>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/leba.sang"><img src="image/facebooks.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lbs.21.1/"><img src="image/insta.png"></a>
+                </li>
+                <li>
+                    <a href="mailto:sang0968991331@gmail.com"><img src="image/gmail.png"></a>
+                </li>
+                <li id="phone">
+                    <img src="image/phones.png">
+                    <span>096-899-1331</span>
+                </li>
+                <li id="location">
+                    <img src="image/locations.png" onclick="Myfunction()">
+                    <span>19/4 Bình Quới-Bình Thạnh-TP.HCM</span>
+                </li>
+            </ul>
+        </div>
+        <!-- https://www.embedgooglemap.net/en/?gclid=CjwKCAjwr7X4BRA4EiwAUXjbt-GaN8zM07LQz41EYlbTbZ4GZB-gK-a9ugj61QLNQ_7bvoMpQNI2OBoCYzYQAvD_BwE -->
+        <div class="mapouter" id="mapouter">
+            <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=194%20b%C3%ACnh%20qu%E1%BB%9Bi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+        <script>
+            var circle = document.getElementById("circle");
+            var upBtn = document.getElementById("upBtn");
+            var downBtn = document.getElementById("downBtn");
+            var rotateValue = circle.style.transform;
+            var menu = document.getElementById("menu");
+            //  var menus = document.getElementById("menu-lienhe").style.display;
+            console.log(rotateValue);
+
+            // function Myfunction() {
+            //     var x = document.getElementById("mapouter");
+            //     if (x.style.display === "block") {
+            //         x.style.display = "none";
+            //     } else {
+            //         x.style.display = "block";
+            //     }
+
+            // }
+            function Myfunction() {
+                var x = document.getElementById("profile");
+                x.style.display = "flex";
+            }
+
+            function clearCoor() {
+                var x = document.getElementById("profile");
+                x.style.display = "none";
+            }
+
+            var rotateSum;
+            upBtn.onclick = function () {
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+            downBtn.onclick = function () {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+        </script>
+</body>
+
+</html>
